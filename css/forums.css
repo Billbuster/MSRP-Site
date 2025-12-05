@@ -1,0 +1,88 @@
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #111;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+  color: #ccc;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  opacity: 0.8;
+}
+
+/* FORUMS */
+.forums-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.forum-category {
+  margin-bottom: 50px;
+}
+
+.forum-category h2 {
+  border-left: 4px solid #c0392b;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #fff;
+}
+
+.forum-card {
+  background: #181818;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: 0.2s;
+}
+
+.forum-card:hover {
+  transform: translateY(-3px);
+}
+
+.forum-card button {
+  padding: 8px 18px;
+  background: #c0392b;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.forum-card button:hover {
+  background: #e74c3c;
+}
