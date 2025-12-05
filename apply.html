@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Applications | DOJRP Style</title>
-<link rel="stylesheet" href="applications.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MSRP — Applications</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/departments.css">
 </head>
 <body>
-<header class="navbar">
-<div class="logo">COMMUNITY NAME</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="forums.html">Forums</a>
-<a href="applications.html" class="active">Applications</a>
-</nav>
-</header>
+  <!-- NAVBAR (shared) -->
+  <header id="site-header">
+    <div class="nav-inner container">
+      <a class="brand" href="/">
+        <img src="assets/logo.png" alt="DoJRP" class="logo">
+      </a>
+
+      <nav class="nav-main" id="nav-main">
+        <ul class="nav-left">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/forums.html">Forums</a></li>
+           <li><a href="/apply.html">Open Applications</a></li>
+
+          <li class="has-dropdown">
+            <a href="#">Departments <span class="caret">▾</span></a>
+            <div class="dropdown">
+              <a href="/leo.html">LEO</a>
+              <a href="/fire.html">Fire / EMS</a>
+              <a href="/dispatch.html">Dispatch</a>
+              <a href="/civ.html">Civ</a>
+            </div>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#">Resources <span class="caret">▾</span></a>
+            <div class="dropdown">
+              <a href="/servers.html">Servers</a>
+              <a href="/rules.html">Rules</a>
+              <a href="/guides.html">Guides</a>
+              <a href="/staff.html">Staff</a>
+            </div>
+          </li>
+
+          <li><a href="/news.html">News</a></li>
+        </ul>
+
+        <ul class="nav-right">
+          <li><a class="btn-discord" href="https://discord.gg/YOUR_INVITE" target="_blank" rel="noopener">Join Discord</a></li>
+          <li><a class="btn-apply" href="/apply.html">Apply</a></li>
+          <li class="mobile-toggle" id="mobile-toggle">☰</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
 
 <section class="hero">
