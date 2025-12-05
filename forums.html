@@ -2,106 +2,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MSRP | Forums</title>
-  <link rel="stylesheet" href="forums.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MSRP — Forums</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/departments.css">
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">MSRP</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="forums.html" class="active">Forums</a>
-      <a href="applications.html">Applications</a>
-    </nav>
+  <!-- NAVBAR (shared) -->
+  <header id="site-header">
+    <div class="nav-inner container">
+      <a class="brand" href="/">
+        <img src="assets/logo.png" alt="DoJRP" class="logo">
+      </a>
+
+      <nav class="nav-main" id="nav-main">
+        <ul class="nav-left">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/forums.html">Forums</a></li>
+           <li><a href="/apply.html">Open Applications</a></li>
+
+          <li class="has-dropdown">
+            <a href="#">Departments <span class="caret">▾</span></a>
+            <div class="dropdown">
+              <a href="/leo.html">LEO</a>
+              <a href="/fire.html">Fire / EMS</a>
+              <a href="/dispatch.html">Dispatch</a>
+              <a href="/civ.html">Civ</a>
+            </div>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#">Resources <span class="caret">▾</span></a>
+            <div class="dropdown">
+              <a href="/servers.html">Servers</a>
+              <a href="/rules.html">Rules</a>
+              <a href="/guides.html">Guides</a>
+              <a href="/staff.html">Staff</a>
+            </div>
+          </li>
+
+          <li><a href="/news.html">News</a></li>
+        </ul>
+
+        <ul class="nav-right">
+          <li><a class="btn-discord" href="https://discord.gg/YOUR_INVITE" target="_blank" rel="noopener">Join Discord</a></li>
+          <li><a class="btn-apply" href="/apply.html">Apply</a></li>
+          <li class="mobile-toggle" id="mobile-toggle">☰</li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Community Forums</h1>
-    <p>Discuss, learn, and connect with the community.</p>
-  </section>
+ <section class="hero">
+<h1>Community Forums</h1>
+<p>Discuss, learn, and connect with the community.</p>
+</section>
 
-  <section class="forums-container">
-    <div class="forum-category">
-      <h2>General Discussions</h2>
-      <div class="forum-card">
-        <h3>Announcements</h3>
-        <p>Official updates from staff.</p>
-        <button>View Threads</button>
-      </div>
-      <div class="forum-card">
-        <h3>Introductions</h3>
-        <p>New members can introduce themselves!</p>
-        <button>View Threads</button>
-      </div>
-    </div>
 
-    <div class="forum-category">
-      <h2>Roleplay Sections</h2>
-      <div class="forum-card">
-        <h3>LEO Discussion</h3>
-        <p>Talk about law enforcement roleplay.</p>
-        <button>View Threads</button>
-      </div>
-      <div class="forum-card">
-        <h3>Fire/EMS Discussion</h3>
-        <p>Fire/EMS operations & planning.</p>
-        <button>View Threads</button>
-      </div>
-    </div>
-  </section>
-</body>
-</html>
+<section class="forums-container">
+<div class="forum-category">
+<h2>General Discussions</h2>
+<div class="forum-card">
+<h3>Announcements</h3>
+<p>Official updates from staff.</p>
+<button>View Threads</button>
+</div>
+<div class="forum-card">
+<h3>Introductions</h3>
+<p>New members can introduce themselves!</p>
+<button>View Threads</button>
+</div>
+</div>
 
-<!-- applications.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Applications | DOJRP Style</title>
-  <link rel="stylesheet" href="applications.css" />
-</head>
-<body>
-  <header class="navbar">
-    <div class="logo">COMMUNITY NAME</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="forums.html">Forums</a>
-      <a href="applications.html" class="active">Applications</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Department Applications</h1>
-    <p>Select a department to begin your application.</p>
-  </section>
-
-  <section class="applications-grid">
-    <div class="app-card">
-      <h2>Law Enforcement</h2>
-      <p>Apply to become a sworn officer.</p>
-      <a href="forms/leo.html" class="apply-btn">Apply Now</a>
-    </div>
-
-    <div class="app-card">
-      <h2>Fire / EMS</h2>
-      <p>Serve the community with Fire/EMS services.</p>
-      <a href="forms/fireems.html" class="apply-btn">Apply Now</a>
-    </div>
-
-    <div class="app-card">
-      <h2>Civilian</h2>
-      <p>Become a registered civilian member.</p>
-      <a href="forms/civ.html" class="apply-btn">Apply Now</a>
-    </div>
-
-    <div class="app-card">
-      <h2>Dispatch</h2>
-      <p>Apply to become a 911 Dispatcher.</p>
-      <a href="forms/dispatch.html" class="apply-btn">Apply Now</a>
-    </div>
-  </section>
+<div class="forum-category">
+<h2>Roleplay Sections</h2>
+<div class="forum-card">
+<h3>LEO Discussion</h3>
+<p>Talk about law enforcement roleplay.</p>
+<button>View Threads</button>
+</div>
+<div class="forum-card">
+<h3>Fire/EMS Discussion</h3>
+<p>Fire/EMS operations & planning.</p>
+<button>View Threads</button>
+</div>
+</div>
+</section>
 </body>
 </html>
